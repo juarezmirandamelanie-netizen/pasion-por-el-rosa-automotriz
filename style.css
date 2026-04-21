@@ -1,0 +1,336 @@
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: #fc8ee0;
+  color: rgb(255, 255, 255);
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #fa05bd;
+    background-color: #fdc6ef;
+    margin: 20px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #13070d;
+}
+main {
+  max-width: 1200px; /* Centra el contenido en pantallas grandes */
+  margin: 40px auto;  /* Da espacio respecto al header */
+  padding: 0 20px;
+  line-height: 1.6;  /* Mejora la lectura del texto */
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #110d0d;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #0f0d0f;
+  color: #0e0a0d;
+}
+.image-gallery {
+  display: grid;
+  /* Crea 3 columnas iguales, pero en móvil se pone 1 sola */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+  gap: 20px; /* Espacio entre las fotos */
+  margin-top: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #110e10(0,0,0,0.1);
+  background: #fafafa;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover; /* Evita que la imagen se deforme */
+  display: block;
+}
+
+.image-info {
+  padding: 15px;
+}
+
+.image-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #130a11;
+}
+
+.image-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #050405;
+}
+
+.nav-menu ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #000000;
+}
+main {
+  max-width: 1200px; 
+  margin: 40px auto; 
+  padding: 0 20px;
+  line-height: 1.6;  
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #ffb4ec;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  gap: 20px;
+  
+
+}
+
+.main-footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-top: 1px solid #ddd;
+  color: #fc8ee0;
+}
+.image-gallery {
+  display: grid;
+  
+
+  gap: 30px; 
+  margin-top: 30px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px #fc8ee0(0,0,0,0.1);
+  background: #fff;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px); /* Efecto de levante al pasar el mouse */
+}
+
+.gallery-item img {
+  width: 50%;
+  height: 200px;
+  object-fit: cover; /* Evita que la imagen se deforme */
+  display: block;
+}
+
+.image-info {
+  padding: 15px;
+}
+
+.image-info h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #f805bb;
+}
+
+.image-info p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #000000;
+}
+/* CARRUSEL */
+.carrusel-horizontal {
+    width: 100%;
+    overflow: hidden;
+    background: #fc8ee0;
+    padding: 20px 0;
+}
+
+.track {
+    display: flex;
+    width: max-content;
+    animation: mover 20s linear infinite;
+}
+
+.track img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Animación */
+@keyframes mover {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #ff00bf;
+    background-color: #fdc6ef;
+}
+header {
+    background: linear-gradient(135deg, #fc8ee0 100% ,#f4ff57 0%);
+    color: #000000;
+    text-align: center;
+    padding: 8rem 2rem;
+    box-shadow: none;
+}
+header h1{
+    font-size: 6.2rem;
+    margin-bottom: 0.6rem;
+    font-weight: 1400;
+    letter-spacing: -0.5px;
+}
+
+header a{
+    font-size: 100px;
+}
+header p{
+    font-size: 5.35rem;
+    opacity: 0.92;
+    font-weight: 300;
+}
+.container{
+    max-width: 800px;
+    margin: 2.5rem auto;
+    padding: 0 1.5rem;
+}
+section{
+    background-color:#b06dfc(255, 0, 0);
+    border-radius: 1rem;
+    padding: 0.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section {
+    background-color: rgb(252, 171, 238); /* El color rosa de tu imagen */
+    box-shadow: none;                     /* Sin sombras */
+    border: none;                         /* Sin bordes con relieve */
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.5rem;
+    justify-content: center;
+    margin-top: 5.5rem;
+}
+ul li{
+    background-color: #fc6dc5;
+    padding: 1rem 1.8rem;
+    border-radius: 10px;
+    font-size: 1.15rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 1px solid #fc6dc5;
+}
+ul a{
+    text-decoration: none;
+    color: #a72828;
+    display: block;
+}
+ul li:hover{
+    background: #f1f0f1;
+    color: rgb(0, 0, 0);
+}
+section p{
+    font-size: 1.5rem;
+    color: #000000;
+}       
+footer{
+    text-align: center;
+    padding: 2rem;
+    margin-top: 2rem ;
+    background-color: #ff79e9;
+    color: rgb(170, 32, 32);
+    font-family: 'franklin gothic medium', 'arial narrow', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+footer a{
+    font-family: "betania patmos gdl", cursive;
+    font-weight: 400;
+    font-style: normal;
+} 
